@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class SegmentTree {
     /*
     to use queries use 
@@ -119,11 +116,3 @@ class SegmentTree {
         }
     }
 };
-
-int main()
-{
-    vector<int> arr = {3,2,67,4,2,10,45,22};
-    SegmentTree st(arr);
-    st.update(1,0,arr.size()-1,1,1,89);
-    cout << st.querysum(1,0,arr.size()-1,2,4);
-}
