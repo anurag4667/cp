@@ -2,6 +2,17 @@
 using namespace std;
 
 class SegmentTree {
+    /*
+    to use queries use 
+    //node,start,end,range_start,range_end
+    --> queryxxx(1,0,arr.size()-1,l,r)
+    
+    to use update
+    //node,start,end,point,point,val
+    --> update(1,0,arr.size()-1,p,p,val)
+    //dont use this function for range update
+    */
+
     public:
     int n;
     vector<int> treemax,treemin,treesum;
